@@ -77,7 +77,6 @@
   const draw = (state: ItemState) => {
     if (!ctx || !canvas) return;
     for (let y = 0; y < state.length; y++) {
-      console.log(state[y]);
       for (let x = 0; x < state[y].length; x++) {
         const item = state[y][x];
         const i = new Image();
@@ -114,7 +113,7 @@
         prev +
         curr.reduce(
           (prev2, curr2) =>
-            prev2 + Number.isNaN(curr2.numerator) ? 0 : curr2.numerator,
+            prev2 + (Number.isNaN(curr2.numerator) ? 0 : curr2.numerator),
           0
         )
       );
@@ -136,7 +135,6 @@
     img.src = imageUrl;
 
     img.onload = () => {
-      console.log("hehe");
       if (canvas) {
         ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
         const dpi = window.devicePixelRatio;
