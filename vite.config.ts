@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte()],
-  base: "/osrs-custom-skill-page-creator/"
+  //base: "/osrs-custom-skill-page-creator/"
 })
