@@ -14,7 +14,7 @@
     </div>
   </section>
   <footer>
-    Created by <a target="_blank" href="https://jatkin.dev">Julian Atkin</a>
+    <a target="_blank" href="https://jatkin.dev">Created by Julian Atkin</a>
   </footer>
 </main>
 
@@ -39,14 +39,8 @@
     text-shadow: 2px 2px 0 0 #000;
     @apply py-12;
   }
-  a {
-    text-decoration: dotted;
-  }
   a:hover {
-    color: white;
-  }
-  a:active {
-    color: #ffff00;
+    text-decoration: underline;
   }
   main {
     position: relative;
